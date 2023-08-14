@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Radio Canada", sans-serif;
+}
+
+body {
+  /* background-color: peru; */
+  background-image: linear-gradient(to right,#cc2b5e,#753a88);
+  color: #f4d4de;
+  text-align: center;
+}
+@media (max-width: 0px) {
+  body {
+    background-image: none; /* Remove background image for smaller screens */
+  }
+  
+  .header, .box {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+  
+  .row {
+    flex-wrap: wrap; /* Wrap buttons in rows for smaller screens */
+  }
+  
+  #player, #submit, #roomId1, #roomcreate, #gif {
+    margin: 10px auto; /* Center align these elements */
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 35px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 75px;
+  margin: 2px;
+  width: 75px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  /* cursor: none; */
+  
+}
+input{
+  &:focus {
+    outline: none;
+}
+}
+
+.btn:hover {
+  cursor: pointer;
+  /* background-color: rgb(240, 240, 240); */
+}
+
+.btn:disabled {
+  color: black;
+  cursor: no-drop;
+}
+
+.result {
+  text-align: center;
+}
+
+.reset {
+  text-align: center;
+}
+
+#reset {
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 17px;
+  margin: 35px;
+  transition: all 0.1s ease-in-out;
+}
+
+#reset:hover {
+  color: white;
+  background-color: black;
+}
+#player{
+  /* margin-left: 550px;
+  /* align-items: center;
+  justify-content: center; */ 
+}
+#player1{
+  border-radius: 5px;
+  border:2px solid black;
+}
+#player2{
+  border-radius: 5px;
+  border:2px solid black;
+}
+#submit{
+  margin-top: 20px;
+  /* margin-left: 650px;
+  align-items: center;
+  justify-content: center; */
+  background-color: #cc2b5e;
+  color:white;
+  width: 80px;
+  border-radius: 10px;
+  border: 2px solid #f4d4de;
+}
+.player-x {
+  background-color: #657fcc; /* You can change this color to your preference */
+}
+
+.player-o {
+  background-color: #f5a7a5; /* You can change this color to your preference */
+}
+.winning-btn {
+  background-color: #47c847; /* Green color */
+}
+#newgame:hover{
+  color: white;
+  background-color: black;
+}
+#newgame{
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 17px;
+  margin: 35px;
+  transition: all 0.1s ease-in-out;
+}
+#roomId1{
+  text-align: center;
+  font-size: 20px;
+  /* margin-left: 660px; */
+  margin-bottom: 30px;
+  width: 70px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#roomId-label{
+  /* margin-left: 670px;
+  align-items: center;
+  justify-content: center; */
+  margin-bottom: 0px;
+}
+
+#roomcreate:hover{
+  color: white;
+  background-color: black;
+}
+#roomcreate{
+  border: 1px solid black;
+  /* align-items: center;
+  justify-content: center; */
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 17px;
+  margin: 35px;
+  /* margin-left: 700px; */
+  transition: all 0.1s ease-in-out;
+}
+/* #nav{
+  align-items: center;
+  justify-content: center;
+} */
+#gif{
+  /* margin-left: 700px; */
+  margin-top: 50px;
+  height: 100px;
+}
+.header h1 {
+  position: relative;
+  font-size: 2em;
+}
+
+.header h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), transparent, rgba(255, 255, 255, 0.8));
+  opacity: 0;
+  transform: scaleX(0);
+  animation: shine 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleX(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
